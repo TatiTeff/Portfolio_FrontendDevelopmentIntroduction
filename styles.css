@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Permanent+Marker&family=Satisfy&display=swap');
+/* font-family: 'Caveat Brush', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Satisfy', cursive; */
+
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./img/beigeaesthetic.png);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #d8af97e0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -10px;
+    margin-top: -40px;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 70px;
+    font-weight: bolder;
+    color: white;
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    color: #000;
+}
+
+p {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 28px;
+    font-weight:500;
+    color: #000;
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: 8px 8px 8px rgb(243, 240, 240);
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;;
+    background-color: #ffffff97;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Estilos para la sección "Acerca de mí" */
+.about {
+    width: 100%;
+    text-align: center;
+    background-image: url(./img/beigeaesthetic.png);
+    background-size: 100% 150%;
+    object-fit: cover;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.about h2{
+    margin-bottom: -5px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+}
+
+.about img {
+    width: 32%;
+    height: 32%;
+    border: 10px solid #ffffffac;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.2s;
+}
+
+/* Zoom del 110% al pasar el mouse por encima de la foto*/
+.about img:hover {
+    transform: scale(1.1); 
+}
+
+/* Estilos para la sección "Experiencia Laboral y Académica" */
+.experience {
+    background-image: url(./img/beigeandpink.jpg);
+    background-size: 100% 100%;
+    padding: 40px; 
+    margin-bottom: 20px;
+}
+
+/* Estilos para la sección "Proyectos" */
+.projects {
+    background-image: linear-gradient(to bottom, rgba(245, 236, 225, 0.7), rgba(216, 194, 167, 0.7)), url(./img/3aae75aea4455fcede51c7a98f8b8485.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+
+/* Estilos para cada par de proyectos */
+.project-pair {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.project {
+    text-align: center;
+    padding: 25px;
+    max-width: 45%; /* Ancho máximo para cada proyecto en un par */
+}
+
+.project img {
+    width: 100%;
+    height: 65%;
+    display: block;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: #fff solid 5px;
+    transition: transform 0.2s;
+}
+
+.project img:hover {
+    transform: scale(1.1); /* Aplica un zoom del 110% al pasar el mouse por encima */
+}
+
+.project h3 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.project p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .project-pair {
+        flex-direction: column;
+    }
+    .project {
+        max-width: 100%; /* Ancho máximo para cada proyecto en dispositivos móviles */
+    }
+}
+
+
+footer h2 {
+    color: #d8af97;
+}
+
+
